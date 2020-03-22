@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+  <link type="text/css" rel="stylesheet" href="default.css">
+</head>
+<body>
+  <section id="settings">
+    <form>
+      <label for="p1name">Your name:</label>
+      <input id="p1name" type="text" placeholder="Player 1">
+      <label for="p2name">Your opponent's name:</label>
+      <input id="p2name" type="text" placeholder="Darth Vader">
+      <span>Rounds to play:</span>
+      <select id="roundpicker" onchange="adjustRounds()">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+      <div id="moves">
+        <div class="move round1 active">Round 01:
+          <input id="move1rock" type="radio" name="round1move" value="0" checked="checked"><label for="move1rock">&#x270a;</label>
+          <input id="move1paper" type="radio" name="round1move" value="1"><label for="move1paper">&#x1F590;</label>
+          <input id="move1scissors" type="radio" name="round1move" value="2"><label for="move1scissors">&#x270c;</label>
+        </div>
+        <div class="move round2">Round 02:
+          <input id="move2rock" type="radio" name="round2move" value="0"i checked="checked"><label for="move2rock">&#x270a;</label>
+          <input id="move2paper" type="radio" name="round2move" value="1"><label for="move2paper">&#x1F590;</label>
+          <input id="move2scissors" type="radio" name="round2move" value="2"><label for="move2scissors">&#x270c;</label>
+        </div>
+        <div class="move round3">Round 03:
+          <input id="move3rock" type="radio" name="round3move" value="0" checked="checked"><label for="move3rock">&#x270a;</label>
+          <input id="move3paper" type="radio" name="round3move" value="1"><label for="move3paper">&#x1F590;</label>
+          <input id="move3scissors" type="radio" name="round3move" value="2"><label for="move3scissors">&#x270c;</label>
+        </div>
+        <div class="move round4">Round 04:
+          <input id="move4rock" type="radio" name="round4move" value="0" checked="checked"><label for="move4rock">&#x270a;</label>
+          <input id="move4paper" type="radio" name="round4move" value="1"><label for="move4paper">&#x1F590;</label>
+          <input id="move4scissors" type="radio" name="round4move" value="2"><label for="move4scissors">&#x270c;</label>
+        </div>
+        <div class="move round5">Round 05:
+          <input id="move5rock" type="radio" name="round5move" value="0" checked="checked"><label for="move5rock">&#x270a;</label>
+          <input id="move5paper" type="radio" name="round5move" value="1"><label for="move5paper">&#x1F590;</label>
+          <input id="move5scissors" type="radio" name="round5move" value="2"><label for="move5scissors">&#x270c;</label>
+        </div>
+        <div class="move round6">Round 06:
+          <input id="move6rock" type="radio" name="round6move" value="0" checked="checked"><label for="move6rock">&#x270a;</label>
+          <input id="move6paper" type="radio" name="round6move" value="1"><label for="move6paper">&#x1F590;</label>
+          <input id="move6scissors" type="radio" name="round6move" value="2"><label for="move6scissors">&#x270c;</label>
+        </div>
+        <div class="move round7">Round 07:
+          <input id="move7rock" type="radio" name="round7move" value="0" checked="checked"><label for="move7rock">&#x270a;</label>
+          <input id="move7paper" type="radio" name="round7move" value="1"><label for="move7paper">&#x1F590;</label>
+          <input id="move7scissors" type="radio" name="round7move" value="2"><label for="move7scissors">&#x270c;</label>
+        </div>
+        <div class="move round8">Round 08:
+          <input id="move8rock" type="radio" name="round8move" value="0" checked="checked"><label for="move8rock">&#x270a;</label>
+          <input id="move8paper" type="radio" name="round8move" value="1"><label for="move8paper">&#x1F590;</label>
+          <input id="move8scissors" type="radio" name="round8move" value="2"><label for="move8scissors">&#x270c;</label>
+        </div>
+        <div class="move round9">Round 09:
+          <input id="move9rock" type="radio" name="round9move" value="0" checked="checked"><label for="move9rock">&#x270a;</label>
+          <input id="move9paper" type="radio" name="round9move" value="1"><label for="move9paper">&#x1F590;</label>
+          <input id="move9scissors" type="radio" name="round9move" value="2"><label for="move9scissors">&#x270c;</label>
+        </div>
+        <div class="move round10">Round 10:
+          <input id="move10rock" type="radio" name="round10move" value="0" checked="checked"><label for="move10rock">&#x270a;</label>
+          <input id="move10paper" type="radio" name="round10move" value="1"><label for="move10paper">&#x1F590;</label>
+          <input id="move10scissors" type="radio" name="round10move" value="2"><label for="move10scissors">&#x270c;</label>
+        </div>
+      </div>
+      <button type="submit">Go</button>
+    </form>
+  </section>
+  <section id="results">
+    <div class="moves"></div>
+    <div class="finalscore"></div>
+  </section>
+  <script src="game.js"></script>
+</body>
+</html>

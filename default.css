@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.move {
+  position: relative;
+  max-height: 0;
+  transition: max-height 500ms ease-in;
+  overflow: hidden;
+}
+.move.active {
+  max-height: 5rem;
+}
