@@ -5,6 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 .move {
   position: relative;
   max-height: 0;
@@ -12,5 +13,6 @@ html, body {
   overflow: hidden;
 }
 .move.active {
+  margin-bottom: 1rem;
   max-height: 5rem;
 }
