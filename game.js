@@ -2,8 +2,8 @@ class Game {
   constructor (rounds = 1, moves) {
     this._numRounds = rounds;
 
-    this._player1 = new Player('Player 1');
-    this._player2 = new Player('Player 2');
+    this._player1 = new Player(this.playerName(1));
+    this._player2 = new Player(this.playerName(2));
 
     this._player1.makeMoves = moves;
     this._player2.makeRandomMoves = this._numRounds;
@@ -15,6 +15,10 @@ class Game {
     this._score = { [this._player1.name]: 0, [this._player2.name]: 0 };
 
     this._finalScore = '';
+  }
+
+  playerName (i) {
+    return document.getElementById(`p${i}name`).value.length > 0 ? document.getElementById(`p${i}name`).value : `Player ${i}`;
   }
 
   determineWinner (player1, player2) {
